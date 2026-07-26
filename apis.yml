@@ -1,7 +1,14 @@
 aid: fabhotels
 name: FabHotels
-description: 'FabHotels is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'FabHotels is an Indian branded-budget hotel chain and online booking platform,
+  founded in 2014 by Vaibhav Aggarwal and Adarsh Manpuria and headquartered in Gurugram.
+  It operates a network of 1500+ standardized economy hotels across 80+ cities under the
+  FabHotel, FabHotel Prime, and Via brands, with quality-controlled amenities such as free
+  WiFi, air conditioning, and 24/7 security. Consumers book stays through the FabHotels
+  website and its iOS and Android apps; the company also runs a franchise program for
+  property owners and corporate-stay offerings, and is backed by Accel and Goldman Sachs.
+  No public developer API, SDK, or partner integration surface is advertised — this remains
+  a business-to-consumer travel brand rather than an API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/fabhotels/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +16,29 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.fabhotels.com/icons/logo_blue_220px.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Travel
+- Hospitality
+- Hotels
+- Booking
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fabhotels-domain-security.yml
 - type: Website
   url: http://www.fabhotels.com
+- type: Blog
+  url: https://www.fabhotels.com/blog/
+- type: PrivacyPolicy
+  url: https://www.fabhotels.com/privacy-policy
+- type: TermsOfService
+  url: https://www.fabhotels.com/terms-conditions
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
